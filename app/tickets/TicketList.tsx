@@ -2,7 +2,7 @@ import Link from "next/link"
 import Ticket from "./Ticket"
 
 async function getTickets() {
-  await new Promise(resolve => setTimeout(resolve, 1000))
+  //await new Promise(resolve => setTimeout(resolve, 1000))
 
   const res = await fetch('http://localhost:4000/tickets', {
     next: {
