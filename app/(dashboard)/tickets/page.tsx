@@ -3,6 +3,9 @@ import TicketList from "./TicketList"
 import Loading from "../loading"
 import Link from "next/link"
 
+export const metadata = {
+  title: 'Dojo Helpdesk | Tickets'
+}
 export default function Tickets() {
   return (
     <main>
@@ -11,11 +14,13 @@ export default function Tickets() {
           <h2>Tickets</h2>
           <p><small>Currently open tickets.</small></p>
         </div>
+        <Link href="/tickets/create" className="ml-auto">
+          <button className="btn-primary">New Ticket</button>
+        </Link>
       </nav>
       <Suspense fallback={<Loading />}>
         <TicketList />
       </Suspense>
-      <Link href={`/tickets/create`}>Create a new Ticket </Link>
     </main>
   )
 }
