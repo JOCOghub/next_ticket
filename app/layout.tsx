@@ -3,7 +3,7 @@ import { Rubik } from 'next/font/google'
 import { ReactNode } from 'react'
 
 // components
-import Navbar from './components/NavBar';
+// import Navbar from './components/NavBar';
 
 const rubik = Rubik({ subsets: ['latin'] })
 
