@@ -16,12 +16,11 @@ interface RootLayoutProps {
   children: ReactNode;
 }
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <html lang="en">
-      <body className={rubik.className}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
-  )
-}
+    return (
+      <html lang="en">
+        <body className={rubik.className}>
+          {children}
+        </body>
+      </html>
+    )
+  }
