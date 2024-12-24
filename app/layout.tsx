@@ -2,9 +2,6 @@ import './globals.css'
 import { Rubik } from 'next/font/google'
 import { ReactNode } from 'react'
 
-// components
-// import Navbar from './components/NavBar'; permanently removed
-
 const rubik = Rubik({ subsets: ['latin'] })
 
 export const metadata = {
