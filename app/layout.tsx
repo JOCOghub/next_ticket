@@ -2,6 +2,8 @@ import './globals.css'
 import { Rubik } from 'next/font/google'
 import { ReactNode } from 'react'
 
+export const dymamic = 'force-dynamic'
+
 const rubik = Rubik({ subsets: ['latin'] })
 
 export const metadata = {
