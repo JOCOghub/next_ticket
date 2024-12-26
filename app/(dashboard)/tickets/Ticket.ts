@@ -1,5 +1,5 @@
 interface Ticket {
-    id: string | number; // The type depends on your data structure
+    id: string; // used to be string |`number
     title: string;
     body: string;
     priority: "low" | "medium" | "high"; // Adjust based on your priorities

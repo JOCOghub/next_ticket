@@ -2,6 +2,7 @@ import Link from "next/link"
 import Ticket from "./Ticket"
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
+import DeleteButton from "./[id]/DeleteButton"
 
 async function getTickets() {
   const supabase = createServerComponentClient({ cookies })
@@ -30,6 +31,7 @@ export default async function TicketList() {
               {ticket.priority} priority
             </div>
           </Link>
+          <DeleteButton id={ticket.id} />
         </div>
       ))}
       {tickets.length === 0 && (
